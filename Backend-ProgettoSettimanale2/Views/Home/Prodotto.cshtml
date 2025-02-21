@@ -6,8 +6,13 @@
 <h3>Dettagli Prodotto</h3>
 
 <div class="d-flex">
-    <img src="@Model.UrlCopertina" class="w-25"/>
-    <a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@Model.Id">Rimuovi prodotto</a>
+    <div class="d-flex flex-column">
+    <img src="@Model.UrlCopertina" class="w-100"/>
+    <div>
+        <a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@Model.Id">Rimuovi prodotto</a>
+        <a class="btn btn-warning" asp-controller="Home" asp-action="Edit" asp-route-id="@Model.Id">Modifica prodotto</a>
+    </div>
+    </div>
     <div class="d-flex flex-column">
         <div class="d-flex justify-content-between">
             <h4>@Model.Marca</h4>

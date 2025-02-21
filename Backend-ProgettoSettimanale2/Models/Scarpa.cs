@@ -8,6 +8,7 @@
         public int? Prezzo { get; set; }
         public string? Descrizione { get; set; }
         public string? UrlCopertina { get; set; }
+        public string? InputUrl { get; set; }
         public List<Immagine>? Immagini { get; set; }
     }
 }

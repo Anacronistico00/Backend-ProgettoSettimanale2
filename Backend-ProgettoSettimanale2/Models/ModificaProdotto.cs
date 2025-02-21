@@ -2,8 +2,9 @@
 
 namespace Backend_ProgettoSettimanale2.Models
 {
-    public class ScarpaAddModel
+    public class ModificaProdotto
     {
+        public Guid Id { get; set; }
         [Display(Name = "Marca")]
         [Required(ErrorMessage = "Il campo Marca è obbligatorio")]
         [StringLength(50, ErrorMessage = "Il campo Marca deve contenere al massimo 50 caratteri")]

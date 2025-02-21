@@ -1,11 +1,12 @@
-﻿@model ScarpaAddModel
+﻿@model ModificaProdotto
+
 @{
-    ViewData["Title"] = "Aggiungi Prodotto";
+    ViewData["Title"] = "Modifica Prodotto";
 }
 
-<h3>Aggiungi Prodotto</h3>
+<h2>@ViewData["Title"]</h2>
 
-<form asp-controller="Home" asp-action="NewProdotto" method="post" enctype="multipart/form-data">
+<form asp-controller="Home" asp-action="SaveEdit" method="post" asp-route-id="@Model.Id" enctype="multipart/form-data">
     <div class="form-group">
         <label for="Marca" asp-for="Marca">Marca</label>
         <input type="text" class="form-control" id="Marca" asp-for="Marca" placeholder="Inserisci la marca">
@@ -37,7 +38,7 @@
         <span class="text-danger" asp-validation-for="InputUrl"></span>
     </div>
     <button type="submit" class="btn btn-primary mt-3">Aggiungi</button>
-    </form>
+</form>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

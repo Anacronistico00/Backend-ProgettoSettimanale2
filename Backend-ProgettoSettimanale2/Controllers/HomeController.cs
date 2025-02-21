@@ -137,7 +137,7 @@ public class HomeController : Controller
             Marca = "Vans",
             Modello = "Old Skool",
             Prezzo = 80,
-            Descrizione = "Le Vans Old Skool sono un modello di scarpe da skate prodotto dalla casa californiana Vans. Il modello è caratterizzato dalla banda laterale e dalla",
+            Descrizione = "Le Vans Old Skool sono un modello di scarpe da skate prodotto dalla casa californiana Vans. Il modello è caratterizzato dalla banda laterale e dalla suola molto alta.",
             UrlCopertina = "https://photos6.spartoo.it/photos/780/7800601/7800601_1200_A.jpg",
             Immagini = new List<Immagine>
             {
@@ -219,10 +219,69 @@ public class HomeController : Controller
             Prezzo = scarpaAddModel.Prezzo,
             Descrizione = scarpaAddModel.Descrizione,
             UrlCopertina = scarpaAddModel.UrlCopertina,
+            InputUrl = scarpaAddModel.InputUrl,
             Immagini = new List<Immagine>()
         };
 
+        if (!string.IsNullOrEmpty(scarpaAddModel.InputUrl))
+        {
+            var urls = scarpaAddModel.InputUrl
+                .Split(',')
+                .Select(url => url.Trim())
+                .ToList();
+
+            newScarpa.Immagini = urls.Select(url => new Immagine { Url = url }).ToList();
+        }
+
         scarpe.Add(newScarpa);
+        return RedirectToAction("Index");
+    }
+
+    [HttpGet("home/prodotto/edit/{id:guid}")]
+    public IActionResult Edit(Guid id)
+    {
+        var scarpa = scarpe.FirstOrDefault(s => s.Id == id);
+        if (scarpa == null)
+        {
+            TempData["Error"] = "Prodotto non trovato!";
+            return RedirectToAction("Index");
+        }
+
+        var editProduct = new ModificaProdotto
+        {
+            Id = scarpa.Id,
+            Marca = scarpa.Marca,
+            Modello = scarpa.Modello,
+            Prezzo = scarpa.Prezzo,
+            Descrizione = scarpa.Descrizione,
+            UrlCopertina = scarpa.UrlCopertina,
+            InputUrl = string.Join(",", scarpa.Immagini.Select(i => i.Url))
+        };
+        return View(editProduct);
+    }
+
+    [HttpPost("home/prodotto/edit/save/{id:guid}")]
+    public IActionResult SaveEdit(Guid id, ModificaProdotto modificaProdotto)
+    {
+        var scarpa = scarpe.FirstOrDefault(s => s.Id == id);
+        if (scarpa == null)
+        {
+            TempData["Error"] = "Prodotto non trovato!";
+            return RedirectToAction("Index");
+        }
+        scarpa.Marca = modificaProdotto.Marca;
+        scarpa.Modello = modificaProdotto.Modello;
+        scarpa.Prezzo = modificaProdotto.Prezzo;
+        scarpa.Descrizione = modificaProdotto.Descrizione;
+        scarpa.UrlCopertina = modificaProdotto.UrlCopertina;
+        if (!string.IsNullOrEmpty(modificaProdotto.InputUrl))
+        {
+            var urls = modificaProdotto.InputUrl
+                .Split(',')
+                .Select(url => url.Trim())
+                .ToList();
+            scarpa.Immagini = urls.Select(url => new Immagine { Url = url }).ToList();
+        }
         return RedirectToAction("Index");
     }
 
