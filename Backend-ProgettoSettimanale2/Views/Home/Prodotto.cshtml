@@ -16,7 +16,7 @@
     <div class="d-flex flex-column">
         <div class="d-flex justify-content-between">
             <h4>@Model.Marca</h4>
-            <p>€ @Model.Prezzo</p>
+            <p>€ @Model.Prezzo.ToString("C") </p>
         </div>
         <p>@Model.Modello</p>
         <p>@Model.Descrizione</p>
