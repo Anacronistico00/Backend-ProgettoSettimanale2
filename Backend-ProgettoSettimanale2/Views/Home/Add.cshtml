@@ -1,0 +1,34 @@
+﻿@model ScarpaAddModel
+@{
+    ViewData["Title"] = "Aggiungi Prodotto";
+}
+
+<h3>Aggiungi Prodotto</h3>
+
+<form asp-controller="Home" asp-action="NewProdotto" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Marca">Marca</label>
+        <input type="text" class="form-control" id="Marca" name="Marca" placeholder="Inserisci la marca">
+    </div>
+    <div class="form-group">
+        <label for="Modello">Modello</label>
+        <input type="text" class="form-control" id="Modello" name="Modello" placeholder="Inserisci il modello">
+    </div>
+    <div class="form-group">
+        <label for="Prezzo">Prezzo</label>
+        <input type="number" class="form-control" id="Prezzo" name="Prezzo" placeholder="Inserisci il prezzo">
+    </div>
+    <div class="form-group">
+        <label for="Descrizione">Descrizione</label>
+        <textarea class="form-control" id="Descrizione" name="Descrizione" rows="3" placeholder="Inserisci la descrizione"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="UrlCopertina">Url Copertina</label>
+        <input type="text" class="form-control" id="UrlCopertina" name="UrlCopertina" placeholder="Inserisci l'url della copertina">
+    </div>
+    <div class="form-group">
+        <label for="Immagini">Immagini</label>
+        <input type="file" class="form-control" id="Immagini" name="Immagini" multiple>
+    </div>
+    <button type="submit" class="btn btn-primary">Aggiungi</button>
+    </form>
