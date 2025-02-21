@@ -5,27 +5,35 @@
 
 <h3>Dettagli Prodotto</h3>
 
-<div class="d-flex">
-    <div class="d-flex flex-column">
-    <img src="@Model.UrlCopertina" class="w-100"/>
-    <div>
-        <a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@Model.Id">Rimuovi prodotto</a>
-        <a class="btn btn-warning" asp-controller="Home" asp-action="Edit" asp-route-id="@Model.Id">Modifica prodotto</a>
-    </div>
-    </div>
-    <div class="d-flex flex-column">
-        <div class="d-flex justify-content-between">
-            <h4>@Model.Marca</h4>
-            <p>€ @Model.Prezzo.ToString("C") </p>
+<div class=" container-fluid d-flex">
+    <div class="row">
+        <div class="col col-3">
+            <img src="@Model.UrlCopertina" class="w-100" />
+            <div class="d-flex">
+                @foreach (var img in Model.Immagini)
+                {
+                    <img src="@img.Url" class="w-50" />
+                }
+            </div>
+        </div>                    
+        <div class="col col-9">
+            <div class="d-flex flex-column">
+                <div class="d-flex justify-content-between">
+                    <h4>@Model.Marca</h4>
+                    <p>€ @Model.Prezzo.ToString("C") </p>
+                </div>
+                <p>@Model.Modello</p>
+                <p>@Model.Descrizione</p>
+                <div class="d-flex justify-content-end">
+                    <div>
+                        <a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@Model.Id">Rimuovi prodotto</a>
+                        <a class="btn btn-warning" asp-controller="Home" asp-action="Edit" asp-route-id="@Model.Id">Modifica prodotto</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>@Model.Modello</p>
-        <p>@Model.Descrizione</p>
-        <div class="d-flex">
-            @foreach(var img in Model.Immagini)
-            {
-                <img src="@img.Url" class="w-25" />
-            }
-        </div>
+        
+
     </div>
     
 </div>

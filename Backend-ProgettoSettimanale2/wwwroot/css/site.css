@@ -29,6 +29,13 @@ body {
     margin-top: 60px;
 }
 
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    padding: 30px;
+}
+
 .footer {
     height: 70px;
 }
