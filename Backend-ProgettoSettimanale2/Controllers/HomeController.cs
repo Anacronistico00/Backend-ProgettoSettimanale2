@@ -158,24 +158,49 @@ public class HomeController : Controller
         new Scarpa()
         { 
             Id = Guid.NewGuid(), 
-            Marca = "Nike", 
-            Modello = "Air Force 1", 
+            Marca = "Asics", 
+            Modello = "GEL-VENTURE 10 WP", 
             Prezzo = 100,
-            Descrizione = "Le Nike Air Force 1 sono un modello di scarpe da basket prodotto dalla casa americana Nike a partire dal 1982. Il modello è caratterizzato dalla suola in gomma e dalla chiusura con lacci.",
-            UrlCopertina = "https://images.asos-media.com/products/nike-air-force-1-07-sneakers-triplo-bianco/202389207-1-white?$n_750w$&wid=750&hei=750&fit=crop",
+            Descrizione = "Le Asics GEL-VENTURE 10 WP sono l'ideale per il running e il trekking. Divertiti all'aria aperta senza pensare al piede dolorante!",
+            UrlCopertina = "https://photos6.spartoo.it/photos/284/28409429/28409429_1200_A.jpg",
             Immagini = new List<Immagine>
             {
                 new Immagine()
                 {
-                    Url = "https://i8.amplience.net/i/jpl/jd_027536_b?qlt=92&w=750&h=531&v=1&fmt=auto"
+                    Url = "https://photos6.spartoo.it/photos/284/28409429/28409429_1200_B.jpg"
                 },
                 new Immagine()
                 {
-                    Url = "https://i8.amplience.net/i/jpl/jd_027536_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+                    Url = "https://photos6.spartoo.it/photos/284/28409429/28409429_1200_C.jpg"
                 },                
                 new Immagine()
                 {
-                    Url = "https://i8.amplience.net/i/jpl/jd_027536_e?qlt=92&w=750&h=531&v=1&fmt=auto"
+                    Url = "https://photos6.spartoo.it/photos/284/28409429/28409429_1200_F.jpg"
+                },
+
+            }
+        },
+        new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "Nike",
+            Modello = "Air Jordan 1 Low",
+            Prezzo = 100,
+            Descrizione = "Le Nike Air Jordan 1 sono un modello di scarpe da basket prodotto dalla casa americana Nike a partire dal 1985. Il modello è caratterizzato dalla suola in gomma e dalla chiusura con lacci.",
+            UrlCopertina = "https://photos6.spartoo.it/photos/283/28380547/28380547_1200_A.jpg",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/283/28380547/28380547_1200_B.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/283/28327228/Nike---Air-jordan-1-low-bco-celeste-DC0774-164-28327228_1200_A.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/283/28380547/28380547_1200_D.jpg"
                 },
 
             }
@@ -187,20 +212,20 @@ public class HomeController : Controller
             Modello = "Superstar", 
             Prezzo = 90,
             Descrizione = "Le scarpe Adidas Superstar sono un modello di sneaker prodotto dalla casa tedesca Adidas a partire dal 1969. Il modello è caratterizzato dalla punta in gomma e dalle tre strisce laterali dello stesso materiale che decorano il lato esterno di ciascuna scarpa.",
-            UrlCopertina = "https://photos6.spartoo.it/photos/188/18898615/adidas-Originals-SUPERSTAR-J-18898615_1200_A.jpg",
+            UrlCopertina = "https://photos6.spartoo.it/photos/188/18898614/adidas-Originals-SUPERSTAR-J-18898614_1200_A.jpg",
             Immagini = new List<Immagine>
             {
                 new Immagine()
                 {
-                    Url = "https://photos6.spartoo.it/photos/188/18898615/18898615_1200_B.jpg"
+                    Url = "https://photos6.spartoo.it/photos/188/18898614/18898614_1200_B.jpg"
                 },
                 new Immagine()
                 {
-                    Url = "https://photos6.spartoo.it/photos/188/18898615/18898615_1200_D.jpg"
+                    Url = "https://photos6.spartoo.it/photos/188/18898614/18898614_1200_D.jpg"
                 },
                 new Immagine()
                 {
-                    Url = "https://photos6.spartoo.it/photos/188/18898615/18898615_1200_E.jpg"
+                    Url = "https://photos6.spartoo.it/photos/188/18898614/18898614_1200_F.jpg"
                 }
             }
         },
@@ -208,72 +233,23 @@ public class HomeController : Controller
         { 
             Id = Guid.NewGuid(), 
             Marca = "Vans", 
-            Modello = "Old Skool", 
+            Modello = "Classic Slip-On", 
             Prezzo = 80,
-            Descrizione = "Le Vans Old Skool sono un modello di scarpe da skate prodotto dalla casa californiana Vans. Il modello è caratterizzato dalla banda laterale e dalla suola molto alta.",
-            UrlCopertina = "https://photos6.spartoo.it/photos/261/26185/26185_1200_A.jpg",
+            Descrizione = "Le Vans Classic Slip-On sono un modello di scarpe da skate prodotto dalla casa californiana Vans. Il modello è caratterizzato dalla banda laterale e dalla suola molto alta.",
+            UrlCopertina = "https://photos6.spartoo.it/photos/218/218237/Vans-Classic-Slip-On-KIDS-218237_1200_A.jpg",
             Immagini = new List<Immagine>
             {
                 new Immagine()
                 {
-                    Url = "https://photos6.spartoo.it/photos/261/26185/26185_1200_E.jpg"
+                    Url = "https://photos6.spartoo.it/photos/218/218237/218237_1200_B.jpg"
                 },
                 new Immagine()
                 {
-                    Url = "https://photos6.spartoo.it/photos/261/26185/26185_1200_F.jpg"
+                    Url = "https://photos6.spartoo.it/photos/218/218237/218237_1200_D.jpg"
                 },
                 new Immagine()
                 {
-                    Url = "https://photos6.spartoo.it/photos/261/26185/26185_1200_B.jpg"
-                }
-            }
-        },
-        new Scarpa()
-        {
-            Id = Guid.NewGuid(),
-            Marca = "Nike",
-            Modello = "Air Jordan 1",
-            Prezzo = 100,
-            Descrizione = "Le Nike Air Jordan 1 sono un modello di scarpe da basket prodotto dalla casa americana Nike a partire dal 1985. Il modello è caratterizzato dalla suola in gomma e dalla chiusura con lacci.",
-            UrlCopertina = "https://photos6.spartoo.it/photos/282/28262580/Nike-Air-Jordan-1-Mid-28262580_1200_A.jpg",
-            Immagini = new List<Immagine>
-            {
-                new Immagine()
-                {
-                    Url = "https://photos6.spartoo.it/photos/282/28262580/28262580_1200_B.jpg"
-                },
-                new Immagine()
-                {
-                    Url = "https://photos6.spartoo.it/photos/282/28262580/28262580_1200_D.jpg"
-                },
-                new Immagine()
-                {
-                    Url = "https://photos6.spartoo.it/photos/282/28262580/28262580_1200_E.jpg"
-                },
-
-            }
-        },
-        new Scarpa()
-        {
-            Id = Guid.NewGuid(),
-            Marca = "Adidas",
-            Modello = "Grand Court 2.0",
-            Prezzo = 90,
-            Descrizione = "Le scarpe Adidas Superstar sono un modello di sneaker prodotto dalla casa tedesca Adidas a partire dal 1969. Il modello è caratterizzato dalla punta in gomma e dalle tre strisce laterali dello stesso materiale che decorano il lato esterno di ciascuna scarpa.",
-            UrlCopertina = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_A.jpg",
-            Immagini = new List<Immagine>
-            {
-                new Immagine()
-                {
-                    Url = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_B.jpg"
-                },
-                new Immagine()
-                {
-                    Url = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_D.jpg"
-                },
-                new Immagine()
-                {
-                    Url = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_E.jpg"
+                    Url = "https://photos6.spartoo.it/photos/218/218237/218237_1200_F.jpg"
                 }
             }
         },
@@ -281,7 +257,7 @@ public class HomeController : Controller
         {
             Id = Guid.NewGuid(),
             Marca = "Vans",
-            Modello = "Old Skool",
+            Modello = "Old Skool KIDS",
             Prezzo = 80,
             Descrizione = "Le Vans Old Skool sono un modello di scarpe da skate prodotto dalla casa californiana Vans. Il modello è caratterizzato dalla banda laterale e dalla suola molto alta.",
             UrlCopertina = "https://photos6.spartoo.it/photos/780/7800601/7800601_1200_A.jpg",
@@ -300,7 +276,31 @@ public class HomeController : Controller
                     Url = "https://photos6.spartoo.it/photos/780/7800601/7800601_1200_F.jpg"
                 }
             }
-        }
+        },
+        new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "GLOBE",
+            Modello = "Tilt/Marine",
+            Prezzo = 90,
+            Descrizione = "Le scarpe GLOBE Tilt/Marine sono perfette per le lunghe sedute di skating! La loro suola in gel permette un grip perfetto sulla tavola. Super leggere e comode! Non sentirai il minimo dislivello!",
+            UrlCopertina = "https://photos6.spartoo.it/photos/273/27372665/Globe-Tilt-27372665_1200_A.jpg",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/273/27372665/27372665_1200_B.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/273/27372665/27372665_1200_D.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/273/27372665/27372665_1200_F.jpg"
+                }
+            }
+        },
 
     };
     private readonly ILogger<HomeController> _logger;
