@@ -3,20 +3,20 @@
     ViewData["Title"] = "Dettagli Prodotto";
 }
 
-<h3>Dettagli Prodotto</h3>
 
-<div class=" container-fluid d-flex">
-    <div class="row">
+<div class="container-fluid mt-5 pt-5">
+<h3>Dettagli Prodotto</h3>
+    <div class="row mt-2">
         <div class="col col-3">
             <img src="@Model.UrlCopertina" class="w-100" />
-            <div class="d-flex">
+            <div class="d-flex mt-3">
                 @foreach (var img in Model.Immagini)
                 {
-                    <img src="@img.Url" class="w-50" />
+                    <img src="@img.Url" class="w-50 p-1" />
                 }
             </div>
         </div>                    
-        <div class="col col-9">
+        <div class="col col-9 mt-5">
             <div class="d-flex flex-column">
                 <div class="d-flex justify-content-between">
                     <h4>@Model.Marca</h4>
