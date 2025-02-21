@@ -9,6 +9,152 @@ public class HomeController : Controller
 {
     private static List<Scarpa> scarpe = new List<Scarpa>
     {
+                new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "Nike",
+            Modello = "Air Force 1",
+            Prezzo = 100,
+            Descrizione = "Le Nike Air Force 1 sono un modello di scarpe da basket prodotto dalla casa americana Nike a partire dal 1982. Il modello è caratterizzato dalla suola in gomma e dalla chiusura con lacci.",
+            UrlCopertina = "https://images.asos-media.com/products/nike-air-force-1-07-sneakers-triplo-bianco/202389207-1-white?$n_750w$&wid=750&hei=750&fit=crop",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://i8.amplience.net/i/jpl/jd_027536_b?qlt=92&w=750&h=531&v=1&fmt=auto"
+                },
+                new Immagine()
+                {
+                    Url = "https://i8.amplience.net/i/jpl/jd_027536_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+                },
+                new Immagine()
+                {
+                    Url = "https://i8.amplience.net/i/jpl/jd_027536_e?qlt=92&w=750&h=531&v=1&fmt=auto"
+                },
+
+            }
+        },
+        new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "Adidas",
+            Modello = "Superstar",
+            Prezzo = 90,
+            Descrizione = "Le scarpe Adidas Superstar sono un modello di sneaker prodotto dalla casa tedesca Adidas a partire dal 1969. Il modello è caratterizzato dalla punta in gomma e dalle tre strisce laterali dello stesso materiale che decorano il lato esterno di ciascuna scarpa.",
+            UrlCopertina = "https://photos6.spartoo.it/photos/188/18898615/adidas-Originals-SUPERSTAR-J-18898615_1200_A.jpg",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/188/18898615/18898615_1200_B.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/188/18898615/18898615_1200_D.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/188/18898615/18898615_1200_E.jpg"
+                }
+            }
+        },
+        new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "Vans",
+            Modello = "Old Skool",
+            Prezzo = 80,
+            Descrizione = "Le Vans Old Skool sono un modello di scarpe da skate prodotto dalla casa californiana Vans. Il modello è caratterizzato dalla banda laterale e dalla suola molto alta.",
+            UrlCopertina = "https://photos6.spartoo.it/photos/261/26185/26185_1200_A.jpg",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/261/26185/26185_1200_E.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/261/26185/26185_1200_F.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/261/26185/26185_1200_B.jpg"
+                }
+            }
+        },
+        new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "Nike",
+            Modello = "Air Jordan 1",
+            Prezzo = 100,
+            Descrizione = "Le Nike Air Jordan 1 sono un modello di scarpe da basket prodotto dalla casa americana Nike a partire dal 1985. Il modello è caratterizzato dalla suola in gomma e dalla chiusura con lacci.",
+            UrlCopertina = "https://photos6.spartoo.it/photos/282/28262580/Nike-Air-Jordan-1-Mid-28262580_1200_A.jpg",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/282/28262580/28262580_1200_B.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/282/28262580/28262580_1200_D.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/282/28262580/28262580_1200_E.jpg"
+                },
+
+            }
+        },
+        new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "Adidas",
+            Modello = "Grand Court 2.0",
+            Prezzo = 90,
+            Descrizione = "Le scarpe Adidas Superstar sono un modello di sneaker prodotto dalla casa tedesca Adidas a partire dal 1969. Il modello è caratterizzato dalla punta in gomma e dalle tre strisce laterali dello stesso materiale che decorano il lato esterno di ciascuna scarpa.",
+            UrlCopertina = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_A.jpg",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_B.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_D.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/246/24675503/24675503_1200_E.jpg"
+                }
+            }
+        },
+        new Scarpa()
+        {
+            Id = Guid.NewGuid(),
+            Marca = "Vans",
+            Modello = "Old Skool",
+            Prezzo = 80,
+            Descrizione = "Le Vans Old Skool sono un modello di scarpe da skate prodotto dalla casa californiana Vans. Il modello è caratterizzato dalla banda laterale e dalla suola molto alta.",
+            UrlCopertina = "https://photos6.spartoo.it/photos/780/7800601/7800601_1200_A.jpg",
+            Immagini = new List<Immagine>
+            {
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/780/7800601/7800601_1200_B.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/780/7800601/7800601_1200_E.jpg"
+                },
+                new Immagine()
+                {
+                    Url = "https://photos6.spartoo.it/photos/780/7800601/7800601_1200_F.jpg"
+                }
+            }
+        },
         new Scarpa()
         { 
             Id = Guid.NewGuid(), 
@@ -184,7 +330,7 @@ public class HomeController : Controller
         if (scarpa == null)
         {
             TempData["Error"] = "Product not found!";
-            return RedirectToAction("Index");
+            return RedirectToAction("All");
         }
 
         var scarpaDetails = new ScarpaDetails
@@ -234,7 +380,7 @@ public class HomeController : Controller
         }
 
         scarpe.Add(newScarpa);
-        return RedirectToAction("Index");
+        return RedirectToAction("All");
     }
 
     [HttpGet("home/prodotto/edit/{id:guid}")]
@@ -244,7 +390,7 @@ public class HomeController : Controller
         if (scarpa == null)
         {
             TempData["Error"] = "Prodotto non trovato!";
-            return RedirectToAction("Index");
+            return RedirectToAction("All");
         }
 
         var editProduct = new ModificaProdotto
@@ -255,7 +401,7 @@ public class HomeController : Controller
             Prezzo = scarpa.Prezzo,
             Descrizione = scarpa.Descrizione,
             UrlCopertina = scarpa.UrlCopertina,
-            InputUrl = string.Join(",", scarpa.Immagini.Select(i => i.Url))
+            InputUrl = string.Join(", ", scarpa.Immagini.Select(i => i.Url))
         };
         return View(editProduct);
     }
@@ -267,7 +413,7 @@ public class HomeController : Controller
         if (scarpa == null)
         {
             TempData["Error"] = "Prodotto non trovato!";
-            return RedirectToAction("Index");
+            return RedirectToAction("All");
         }
         scarpa.Marca = modificaProdotto.Marca;
         scarpa.Modello = modificaProdotto.Modello;
@@ -282,7 +428,7 @@ public class HomeController : Controller
                 .ToList();
             scarpa.Immagini = urls.Select(url => new Immagine { Url = url }).ToList();
         }
-        return RedirectToAction("Index");
+        return RedirectToAction("All");
     }
 
     [HttpGet("home/prodotto/delete/{id:guid}")]
@@ -301,7 +447,16 @@ public class HomeController : Controller
             TempData["Error"] = "Errore nell'eliminazione del prodotto!";
             return RedirectToAction("Index");
         }
-        return RedirectToAction("Index");
+        return RedirectToAction("All");
+    }
+
+    public IActionResult All()
+    {
+        ScarpeViewModel scarpeList = new ScarpeViewModel
+        {
+            Scarpe = scarpe
+        };
+        return View(scarpeList);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -20,3 +20,15 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar {
+    z-index: 1
+}
+
+.main {
+    margin-top: 60px;
+}
+
+.footer {
+    height: 70px;
+}

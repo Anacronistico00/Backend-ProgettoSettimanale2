@@ -1,20 +1,22 @@
 ﻿@model ScarpeViewModel
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Tutti i Prodotti";
 }
 
 <div class="text-center">
-    <h1 class="">BestSellers</h1>
-    <p class="lead">Le scarpe più vendute del momento</p>
+    <div class="d-flex justify-content-between">
+        <h1 class="">Prodotti</h1>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Add">Aggiungi un prodotto</a>
+    </div>
+    <p class="lead">Le scarpe più fighe del momento!</p>
 </div>
 
 <div class="container">
     <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
-        @for (int i = 0; i < 6; i++)
+        @foreach (var scarpa in Model.Scarpe)
         {
-            var scarpa = Model.Scarpe[i];
-            <div>
+            <div class="mb-2">
                 <div class="card">
                     <img src="@scarpa.UrlCopertina" class="card-img-top" alt="@scarpa.Modello">
                     <div class="card-body">

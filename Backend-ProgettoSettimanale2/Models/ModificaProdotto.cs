@@ -18,7 +18,7 @@ namespace Backend_ProgettoSettimanale2.Models
         [Display(Name = "Prezzo")]
         [Required(ErrorMessage = "Il campo Prezzo è obbligatorio")]
         [Range(1, 1000, ErrorMessage = "Il campo Prezzo deve essere compreso tra 1 e 1000")]
-        public decimal? Prezzo { get; set; }
+        public decimal Prezzo { get; set; }
 
         [Display(Name = "Descrizione")]
         [Required(ErrorMessage = "Il campo Descrizione è obbligatorio")]
