@@ -5,7 +5,7 @@
         public Guid Id { get; set; }
         public string? Marca { get; set; }
         public string? Modello { get; set; }
-        public string? Prezzo { get; set; }
+        public decimal? Prezzo { get; set; }
         public string? Descrizione { get; set; }
         public string? UrlCopertina { get; set; }
         public List<Immagine>? Immagini { get; set; }

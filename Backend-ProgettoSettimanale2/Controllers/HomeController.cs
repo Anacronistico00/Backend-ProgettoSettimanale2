@@ -192,7 +192,7 @@ public class HomeController : Controller
             Id = scarpa.Id,
             Marca = scarpa.Marca,
             Modello = scarpa.Modello,
-            Prezzo = scarpa.Prezzo.ToString(),
+            Prezzo = scarpa.Prezzo,
             Descrizione = scarpa.Descrizione,
             UrlCopertina = scarpa.UrlCopertina,
             Immagini = scarpa.Immagini
